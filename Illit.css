@@ -1,0 +1,358 @@
+/** Comentarios **/
+
+body{
+    margin: 0px;
+    background-image: url(https://i.pinimg.com/736x/af/b0/a5/afb0a52d6d24ffaeb7620e6a61460c4c.jpg);
+
+    p{
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        margin-top: 7px;
+    }
+
+    h1{
+        font-family: "Bungee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 40px;
+        margin-bottom: 8px;
+    }
+
+}
+
+/*Los Navegadores*/
+
+#NavResponsive{
+    display: none;
+    padding: 4px;
+    background-color: black;
+    justify-content: space-between;
+    
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+        }
+    
+}
+
+#NavCompu{
+    padding: 4px;
+    background-color: black;
+    
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 130%;
+            }
+        }
+
+        li:hover{
+            background: pink;
+        }
+}
+
+
+/** Acá está lo del header**/
+
+header{
+    background-image: url(https://i.pinimg.com/1200x/57/23/c2/5723c2fb56389c3ae4c910d5e4dc1c56.jpg);
+    background-size: cover;  /* Hace que la imagen se escale para cubrir todo el header */
+    background-position: center; /* Centra la imagen */
+    height: 620px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+}
+
+
+.HeaderTexto{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /*para fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+
+    h1 {
+        font-size: 60px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+}
+
+
+/**Acá empieza el main**/
+
+main{
+    display: flex;
+}
+
+/**Cuerpo principal aquí**/
+
+.CuerpoPrincipal{
+    margin: 3%;
+    text-align: justify;
+}
+
+.ContenedorLlamativaIntroducción{
+    display: flex;
+    justify-content: center;
+}
+
+#LlamativaIntroducción{
+    width: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 25px;
+    border-style: solid;
+    background-color: rgb(245, 202, 239);
+
+    
+    /* Lo de aquí es para animación*/
+
+    animation: AnimaciónIntroLlamativa 4s linear 0s 1 normal forwards;
+}
+
+@keyframes AnimaciónIntroLlamativa {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-45px);
+	}
+
+	24% {
+		opacity: 1;
+	}
+
+	40% {
+		animation-timing-function: ease-in;
+		transform: translateY(-24px);
+	}
+
+	65% {
+		animation-timing-function: ease-in;
+		transform: translateY(-12px);
+	}
+
+	82% {
+		animation-timing-function: ease-in;
+		transform: translateY(-6px);
+	}
+
+	93% {
+		animation-timing-function: ease-in;
+		transform: translateY(-4px);
+	}
+
+	25%,
+	55%,
+	75%,
+	87% {
+		animation-timing-function: ease-out;
+		transform: translateY(0px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+}
+
+
+/**Miembros xd**/
+
+#Miembros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.MiembrosIndividual{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 3%;
+    background-color: rgb(255, 192, 236);
+    animation: AnimaciónMiembros 0.5s linear 0s 1 normal forwards;
+
+/**Estilo del a y del h3**/
+
+    a{
+        text-decoration: none;
+        font-size: 30px;
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: rgb(253, 224, 243);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);
+    }
+
+    h3{
+        margin: 6px;
+        margin-bottom: -20px;
+        text-align: center;
+    }
+
+    h3:hover{
+        transform: scale(1.5);
+    }
+
+    img:hover{
+        transform: scale(1.12);
+    }
+
+}
+
+
+@keyframes AnimaciónMiembros {
+	0% {
+		transform: scale(0.5);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/**La playlist**/
+
+#PlaylistCelular{
+    display: none;
+}
+
+aside{
+    margin-right: 3%;
+    margin-top: 3%;
+    padding: 2%;
+    border-width: 2px;
+    border-style: solid;
+    background-color: rgb(245, 202, 239);
+
+    a{
+        text-decoration: none;
+        color: black;
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+    }
+
+    li{
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    img{
+        border-width: 2px;
+        border-style: solid;
+    }
+    
+}
+
+footer{
+    background-color: rgb(255, 192, 236);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Acá empiezan los media para ajustar tamaños*/
+
+    /*Celulares*/
+
+    @media (max-width:365px){
+        #NavResponsive img{
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+        @media (max-width:500px){
+
+            #NavCompu{
+                display: none;
+            }
+
+            #NavResponsive{
+                display: block;
+            }
+
+            .MiembrosIndividual{
+                flex-direction: column;
+            }
+
+            #LlamativaIntroducción{
+                width: 450px;
+            }
+
+            #RedesSocialesFooter{
+                display: none;
+            }
+
+        }
+
+    /*Tablets*/
+        @media (max-width:600px){
+            nav li{
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width:1024px){
+
+            aside{
+                display: none;
+            }
+
+            #PlaylistCelular{
+                display: block;
+            }
+
+            #LogoFooter{
+                img{
+                    width: 200px;
+                    height: auto;
+                }
+            }
+
+            #RedesSocialesFooter{
+                img{
+                    height: 37px;
+                    flex-wrap: wrap;
+                }
+
+            }
+
+        }
+
+    /*Computadoras*/
+        @media (max-width:1840px){
+
+            .MiembrosIndividual{
+                flex-direction: row;
+            }
+
+            #LlamativaIntroducción{
+                width: 85%;
+            }
+
+        }
