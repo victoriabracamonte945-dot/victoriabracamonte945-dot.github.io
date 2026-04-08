@@ -19,6 +19,15 @@ body{
         margin-bottom: 8px;
     }
 
+
+        h2{
+        color: rgba(39, 39, 39, 0.644);
+        font-family: "Bungee", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 40px;
+        margin-bottom: 8px;
+    }
 }
 
 /*Los Navegadores*/
@@ -233,6 +242,15 @@ main{
 	}
 }
 
+/*Img R U Next?*/
+
+#ImgRUNext{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  
+}
+
 /**La playlist**/
 
 #PlaylistCelular{
@@ -354,5 +372,15 @@ footer{
             #LlamativaIntroducción{
                 width: 85%;
             }
+        }
 
+        @media (width>1840px){
+
+            .MiembrosIndividual{
+                flex-direction: row;
+            }
+
+            #LlamativaIntroducción{
+                width: 85%;
+            }
         }
